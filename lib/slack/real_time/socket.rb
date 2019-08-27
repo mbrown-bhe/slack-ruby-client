@@ -48,7 +48,7 @@ module Slack
         fail NotImplementedError, "Expected #{self.class} to implement #{__method__}."
       end
 
-      def close(_event)
+      def close(_event=nil)
         @driver = nil
       end
 
